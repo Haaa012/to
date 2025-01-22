@@ -5,7 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Données client</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link href="{{url_for('static',filename='css.css')}}"rel="stylesheet" type="text/css"/>
+    <style>
+             body {
+            background-image: url('/static/images/sr.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+        }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.137); /* Couleur blanche semi-transparente */
+        backdrop-filter: blur(1.5px); /* Flou de 8px */
+        z-index: -1; /* Assure que l'effet reste en arrière-plan */
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.575); /* Transparence légère pour le fond */
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #343a40;
+        text-align: center;
+    }
+
+        table {
+            margin-top: 20px;
+            border: 1px solid #dee2e6;
+        }
+
+        table thead {
+            background: #343a40;
+            color: white;
+        }
+
+        table tbody tr {
+            transition: all 0.2s ease-in-out;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        #addButton {
+            display: block;
+            margin: 20px auto 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #198754;
+            color: white;
+        }
+
+        .modal-content {
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+        }
+
+        .btn-close {
+            background-color: white;
+            color: #343a40;
+        }
+
+        .btn-close:hover {
+            background-color: #dee2e6;
+        }
+
+        .btn-primary, .btn-danger, .btn-secondary {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
