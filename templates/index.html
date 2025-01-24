@@ -6,60 +6,237 @@
     <title>Page de Couverture</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Pour les icônes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        
+        .container{
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 114px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .display-4 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 1.2;
+            padding-top: 3%;
+        }
+        .lead {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        .btn-group-lg > .btn, .btn-lg {
+            padding: .5rem 1rem;
+            font-size: 1.0rem;
+            line-height: 1.5;
+            border-radius: .3rem;
+        }
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+            text-align: center;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 200px;
+        }
+            /* Style pour les éléments de la navbar */
+    .navbar-nav .nav-link {
+        transition: color 0.3s ease, background-color 0.3s ease; /* Animation pour l'effet */
+    }
+
+    /* Hover effect */
+    .navbar-nav .nav-link:hover {
+        color: #ffc107; /* Couleur au survol */
+        background-color: rgba(187, 184, 184, 0.288); /* Couleur de fond légère */
+        border-radius: 5px; /* Coins arrondis pour l'effet de survol */
+    }
+
+    /* Hover effect pour la marque */
+    .navbar-brand:hover {
+        color: #ffc107; /* Couleur au survol pour la marque */
+        text-decoration: underline; /* Souligner au survol */
+    }
+        /* Supprimer le soulignement des liens dans les paragraphes */
+    p a {
+        text-decoration: none; /* Supprime la ligne sous le lien */
+        color: #266ba3; /* Maintient la couleur du texte héritée du parent */
+    }
+
+    /* Optionnel : Style au survol */
+    p a:hover {
+        text-decoration: none; /* Pas de soulignement au survol */
+        color: #007bff; /* Change la couleur au survol (exemple) */
+    }
+  
+    </style>
 </head>
-<body>
+<body style="background-color: #041b48;color: aliceblue;">
 
 <!-- Barre de navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">MonSite</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+style="background-image: url('/static/images/a.avif'); 
+             background-repeat: no-repeat; 
+             background-position: center center; 
+             background-attachment: fixed; 
+             background-size: cover; 
+             font-family: 'Arial', sans-serif;
+             position: fixed; /* Fixe la barre en haut */
+            top: 0;
+            left: 0;
+            width: 100%; /* Occupe toute la largeur */
+            z-index: 1000;
+             "           
+>
+    <a class="navbar-brand" href="#" style="color: rgb(197, 218, 236);">MonSite</a>
+    <button style="background-color: #5c5a5680;;"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: aliceblue;"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Accueil</a>
+                <a class="nav-link" href="#" style="color: aliceblue;">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">À Propos</a>
+                <a class="nav-link" href="#" style="color: aliceblue;">À Propos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/listeclient">Services</a>
+                <a class="nav-link" href="/listeclient" style="color: aliceblue;">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#" style="color: aliceblue;">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <!-- Section d'en-tête -->
-<header class="jumbotron text-center">
-    <h1 class="display-4">Bienvenue sur MonSite!</h1>
-    <p class="lead">Votre solution pour tout ce dont vous avez besoin.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">En savoir plus</a>
+<header class="jumbotron text-center"style="background-image: url('/static/images/tp.png'); 
+background-repeat: no-repeat; 
+background-position: center center; 
+background-attachment: fixed; 
+background-size: cover; 
+font-family: 'Arial', sans-serif;">
+    <h3 class="display-4" style="color: aqua;">Bienvenue sur MonSite!</h3>
+    <p class="lead" style="color: rgb(190, 197, 191);">Votre solution pour tout ce dont vous avez besoin.</p>
+    <a class="btn btn-primary btn-lg" href="#foot" role="button">En savoir plus</a>
 </header>
 
 <!-- Contenu principal -->
 <div class="container">
     <div class="row">
+        <!-- Objet Connecté -->
         <div class="col-md-4">
             <h3>Objet Connecté</h3>
             <p><a href="#">Description du service.</a></p>
+            <!-- Slider (Carousel) -->
+            <div id="carouselObjet" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/images/ob5.jpeg" class="d-block w-100" alt="Objet Connecté 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/ob6.jpeg" class="d-block w-100" alt="Objet Connecté 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/ob7.jpg" class="d-block w-100" alt="Objet Connecté 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/ia9.jpeg" class="d-block w-100" alt="Objet Connecté 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselObjet" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselObjet" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
+
+        <!-- Intelligence Artificielle -->
         <div class="col-md-4">
             <h3>Intelligence Artificielle</h3>
-             <p><a href="#">Description du service.</a></p>
+            <p><a href="#">Description du service.</a></p>
+            <!-- Slider (Carousel) -->
+            <div id="carouselIA" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/images/ia3.jpeg" class="d-block w-100" alt="IA 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/iaa.jpeg" class="d-block w-100" alt="IA 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/iad.jpeg" class="d-block w-100" alt="IA 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/ia8.jpeg" class="d-block w-100" alt="IA 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIA" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIA" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
+
+        <!-- Projet Innovant -->
         <div class="col-md-4">
             <h3>Projet Innovant</h3>
             <p><a href="#">Description du service.</a></p>
+            <!-- Slider (Carousel) -->
+            <div id="carouselProjet" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/images/inov3.jpg" class="d-block w-100" alt="Projet Innovant 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/inov4.jpeg" class="d-block w-100" alt="Projet Innovant 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/inov2.jpeg" class="d-block w-100" alt="Projet Innovant 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/iaa12.jpg" class="d-block w-100" alt="Projet Innovant 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Footer -->
-<footer class="bg-light text-center text-lg-start mt-5">
+<footer class="bg-light text-center text-lg-start mt-5" id="foot" style="background-image: url('/static/images/y.avif'); 
+background-repeat: no-repeat; 
+background-position: center center; 
+background-attachment: fixed; 
+background-size: cover; 
+font-family: 'Arial', sans-serif;">
     <!-- Grid container -->
     <div class="container p-4">
         <!-- Section: Contact -->
@@ -77,7 +254,7 @@
         </section>
 
         <!-- Section: Copyright -->
-        <section class="">
+        <section class="mst">
             <p>&copy; 2024 MonSite. Tous droits réservés.</p>
         </section>
     </div>
